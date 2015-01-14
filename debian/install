@@ -1,0 +1,6 @@
+*rb /usr/share/redmine/plugins/redmine_wktime
+app /usr/share/redmine/plugins/redmine_wktime
+db /usr/share/redmine/plugins/redmine_wktime
+lib /usr/share/redmine/plugins/redmine_wktime
+config /usr/share/redmine/plugins/redmine_wktime
+assets/* /usr/share/redmine/public/plugin_assets/redmine_wktime
