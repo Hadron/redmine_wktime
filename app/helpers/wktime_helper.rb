@@ -1,3 +1,4 @@
+# coding: raw-text
 module WktimeHelper
   include ApplicationHelper
   include Redmine::Export::PDF
@@ -594,7 +595,7 @@ end
 	def getStartOfWeek
 		start_of_week = Setting.start_of_week
         start_of_week = l(:general_first_day_of_week, :default => '1') if start_of_week.blank?    
-		start_of_week = start_of_week.to_i % 7
+		start_of_week = (start_of_week.to_i+1) % 7
 	end
 	
 	def sendNonSubmissionMail
